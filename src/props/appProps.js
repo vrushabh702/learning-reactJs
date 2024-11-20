@@ -1,6 +1,6 @@
 import React from 'react';
-import Greet from './props/learningProps';
-import Welcome from './props/Welcome';
+import Greet from './learningProps';
+import Welcome from './Welcome'
 
 function AppProps() {
   return (
