@@ -12,6 +12,7 @@ function AppReactContextApi(){
             <Counter></Counter>
             <Counter></Counter>
             <Counter></Counter>
+            {/* here we don't use any props or callback function for increment or decrement instead we pass value throught  in CountextContext using useContext */}
         </div>
     )
 }

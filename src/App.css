@@ -40,3 +40,130 @@
 .active{
   color: red; 
 }
+
+/* General navbar styles */
+nav {
+  background-color: #4B0082; /* Purple background */
+  padding: 8px; /* Reduced padding around the navbar */
+  display: flex;
+  justify-content: center; /* Center the navbar items */
+  align-items: center;
+  border-radius: 8px; /* Rounded corners for the whole navbar */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for the navbar */
+}
+
+/* Navbar list style */
+nav ul {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Navbar item style */
+nav li {
+  margin-right: 10px; /* Smaller spacing between each navbar item */
+}
+
+/* Navbar link styles */
+nav a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  background-color: #6A0DAD; /* Default button purple color */
+  padding: 8px 14px; /* Smaller padding for buttons */
+  border-radius: 4px; /* Slightly smaller rounded corners */
+  transition: all 0.3s ease; /* Smooth transitions */
+  display: inline-block; /* Make it behave like a button */
+  font-size: 14px; /* Smaller font size */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Navbar link hover effect */
+nav a:hover {
+  background-color: #0000FF; /* Blue on hover */
+  transform: translateY(-2px); /* Slight upward movement for hover effect */
+}
+
+/* Active link (React Router active state) */
+nav a.active {
+  background-color: #0000FF; /* Blue background for active link */
+  color: white;
+  transform: translateY(0); /* Remove hover effect when active */
+}
+
+/* Add a responsive touch (optional) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  nav li {
+    margin-bottom: 8px; /* Smaller space between items in vertical layout */
+  }
+}
+
+/* Style for the book sub-navigation */
+.book-subnav {
+  background-color: #6A0DAD; /* Purple background */
+  padding: 10px 20px; /* Add padding around the links */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: 20px; /* Space below the sub-navigation */
+  display: flex; /* Use flexbox to arrange items horizontally */
+  justify-content: start; /* Align items to the left */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+/* Style for individual book links */
+.book-subnav a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  margin-right: 15px; /* Space between links */
+  padding: 8px 16px; /* Button-like padding */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Smaller font size */
+  font-weight: bold; /* Bold text */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for book links */
+.book-subnav a:hover {
+  background-color: #0000FF; /* Blue on hover */
+  transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Active state for the book links */
+.book-subnav a.active {
+  background-color: #0000FF; /* Blue background for active link */
+  color: white;
+  transform: translateY(0); /* Remove hover effect when active */
+}
+
+/* Style for the number input field */
+.book-subnav input[type="number"] {
+  margin-left: 20px; /* Space between the last link and the input field */
+  padding: 8px 12px; /* Padding for the input */
+  font-size: 14px; /* Font size of the input */
+  border-radius: 4px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light gray border */
+  width: 100px; /* Width of the input */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Input field focus effect */
+.book-subnav input[type="number"]:focus {
+  border-color: #0000FF; /* Blue border when focused */
+  outline: none; /* Remove default outline */
+}
+
+/* Style for the Outlet (if you need to style the content area inside Outlet) */
+.book-subnav .outlet-content {
+  margin-top: 20px; /* Space above the outlet content */
+  font-size: 16px; /* Font size for outlet content */
+  color: #333; /* Dark text color */
+  font-weight: normal; /* Normal font weight */
+  text-align: center; /* Center the outlet content */
+}

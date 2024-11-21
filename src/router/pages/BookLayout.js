@@ -9,6 +9,7 @@ export function BookLayout(){
     // const [number,setNumber] = useState(3)
     return(
         <>
+        <div className="book-subnav">
             <Link to="/books/1">Book 1</Link>
             <br></br>
             <Link to="/books/2">Book 2</Link>
@@ -18,12 +19,14 @@ export function BookLayout(){
             <Link to="/books/new">New Book</Link>
             <br></br>
             <Outlet context={{hello : "world"}} />
+        
             <input
                 type="number"
                 value={number}
                 // onChange={e => setNumber(e.target.value)}
                 onChange={e => setSearchParams({n: e.target.value})}
             />
+        </div>
         </>
     )
 }

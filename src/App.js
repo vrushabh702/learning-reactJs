@@ -14,7 +14,7 @@ function App() {
     <>
     <AppRouter />
      {/* <UseRouteHooks /> */}
-     <AppReactContextApi></AppReactContextApi>
+     {/* <AppReactContextApi></AppReactContextApi> */}
     </>
   );
 }
