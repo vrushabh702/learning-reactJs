@@ -3,6 +3,8 @@ import { Home } from "./Home";
 import { BookRoutes } from "./bookRoutes";
 import { NotFound } from "./NotFound";
 import AppReactContextApi from "../../StateMangement/ReactContextApi/AppReactContextApi";
+import AppAddToCart from "../../StateMangement/ReactContextApi/AddToCart/Components/AppAddToCart";
+import { CartProvider } from "../../StateMangement/ReactContextApi/AddToCart/Context/cart";
 
 export function AppRouter() {
   const location = useLocation(); // locaion of object looks like
@@ -52,6 +54,9 @@ export function AppRouter() {
           <li>
             <NavLink to="/reactContextApi"> ReactContextApi </NavLink>
           </li>
+          <li>
+            <NavLink to="/addToCart"> AddToCart </NavLink>
+          </li>
           {/* ********** end implementing route in all upcomming example ******** */}
 
 
@@ -72,8 +77,13 @@ export function AppRouter() {
         
 
         {/* ********** implementing route in all upcomming example ******** */}
-        
+
         <Route path="/reactContextApi" element={<AppReactContextApi />}></Route>
+        <Route path="/addToCart" element={
+          <CartProvider>
+            <AppAddToCart />
+          </CartProvider>
+          }></Route>
 
         {/* ********** end implementing route in all upcomming example ******** */}
 

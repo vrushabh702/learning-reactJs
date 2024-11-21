@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
 import { CounterProvider } from './StateMangement/ReactContextApi/context/Counter';
+import AppAddToCart from './StateMangement/ReactContextApi/AddToCart/Components/AppAddToCart';
+import { cartProvider } from './StateMangement/ReactContextApi/AddToCart/Context/cart'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

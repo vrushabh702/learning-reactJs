@@ -7,6 +7,7 @@ import { BookRoutes } from './router/pages/bookRoutes';
 import UseRouteHooks from './router/pages/useRoutesHooks'
 import { AppRouter } from './router/pages/AppRouter';
 import AppReactContextApi from './StateMangement/ReactContextApi/AppReactContextApi';
+import AppAddToCart from './StateMangement/ReactContextApi/AddToCart/Components/AppAddToCart';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <AppRouter />
      {/* <UseRouteHooks /> */}
      {/* <AppReactContextApi></AppReactContextApi> */}
+     {/* <AppAddToCart /> */}
     </>
   );
 }
