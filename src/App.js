@@ -9,16 +9,18 @@ import { AppRouter } from './router/pages/AppRouter';
 import AppReactContextApi from './StateMangement/ReactContextApi/AppReactContextApi';
 import AppAddToCart from './StateMangement/ReactContextApi/AddToCart/Components/AppAddToCart';
 import { AppScalableModx } from './StateMangement/modx/AppScalableModx';
+import AppZustand from './StateMangement/Zustand/AppZustand';
 
 function App() {
   return (
 
     <>
-    {/* <AppRouter /> */}
+    <AppRouter />
      {/* <UseRouteHooks /> */}
      {/* <AppReactContextApi></AppReactContextApi> */}
      {/* <AppAddToCart /> */}
      {/* <AppScalableModx /> */}
+     {/* <AppZustand></AppZustand> */}
     </>
   );
 }
