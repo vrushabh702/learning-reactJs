@@ -7,7 +7,7 @@ import { NotFound } from "./NotFound";
 export function AppRouter(){
 
   const location = useLocation() // locaion of object looks like
-  console.log(location)
+  // console.log(location)
 
     return (
     <>

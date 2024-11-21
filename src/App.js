@@ -6,6 +6,7 @@ import { NotFound } from './router/pages/NotFound'
 import { BookRoutes } from './router/pages/bookRoutes';
 import UseRouteHooks from './router/pages/useRoutesHooks'
 import { AppRouter } from './router/pages/AppRouter';
+import AppReactContextApi from './StateMangement/ReactContextApi/AppReactContextApi';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <>
     <AppRouter />
      {/* <UseRouteHooks /> */}
+     <AppReactContextApi></AppReactContextApi>
     </>
   );
 }
